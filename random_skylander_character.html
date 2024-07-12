@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Skylander Character</title>
+    <script>
+        // Function to redirect to a random Skylander character page
+        function redirectToRandomCharacter() {
+            const skylanderWikiBaseUrl = 'https://skylanders.fandom.com/wiki/';
+            const characters = [
+                'Air_Strike', 'Ambush', 'Astroblast', 'Aurora', 'Bad_Juju', 'Barbella', 'Bash', 'Bat_Spin', 'Big_Bubble_Pop_Fizz', 'Blackout', 'Blades', 'Blast_Zone', 'Blaster-Tron', 'Blastermind', 'Bone_Bash_Roller_Brawl', 'Boom_Bloom', 'Boom_Jet', 'Boomer', 'Bouncer', 'Buckshot', 'Bumble_Blast', 'Bushwhack', 'Camo', 'Chain_Reaction', 'Chill', 'Chompy_Mage', 'Chop_Chop', 'Chopper', 'Chopscotch', 'Cobra_Cadabra', 'Countdown', 'Crash_Bandicoot', 'Crusher', 'Cynder', 'Deep_Dive_Gill_Grunt', 'Deja_Vu', 'Dino-Rang', 'Dive-Clops', 'Doom_Stone', 'Double_Dare_Trigger_Happy', 'Double_Trouble', 'Dr._Krankcase', 'Dr._Neo_Cortex', 'Drill_Sergeant', 'Drobot', 'Dune_Bug', 'Echo', 'Ember', 'Enigma', 'Eruptor', 'Eye-Brawl', 'Fiesta', 'Fire_Kraken', 'Fist_Bump', 'Flameslinger', 'Flare_Wolf', 'Flashwing', 'Fling_Kong', 'Flip_Wreck', 'Food_Fight', 'Free_Ranger', 'Freeze_Blade', 'Fright_Rider', 'Fryno', 'Funny_Bone', 'Gearshift', 'Ghost_Roaster', 'Gill_Grunt', 'Golden_Queen', 'Grave_Clobber', 'Grilla_Drilla', 'Grim_Creeper', 'Gusto', 'Hammer_Slam_Bowser', 'Head_Rush', 'Hex', 'High_Five', 'High_Volt', 'Hood_Sickle', 'Hootloop', 'Hot_Dog', 'Hot_Head', 'Hurricane_Jet-Vac', 'Ignitor', 'Jawbreaker', 'Jet-Vac', 'Ka-Boom', 'King_Pen', 'Knight_Light', 'Knightmare', 'Krypt_King', 'Lava_Lance_Eruptor', 'Lightning_Rod', 'Lob-Star', 'Magna_Charge', 'Mysticat', 'Night_Shift', 'Nightfall', 'Ninjini', 'Pain-Yatta', 'Pit_Boss', 'Pop_Fizz', 'Pop_Thorn', 'Prism_Break', 'Punk_Shock', 'Rattle_Shake', 'Rip_Tide', 'Ro-Bow', 'Rocky_Roll', 'Roller_Brawl', 'Rubble_Rouser', 'Scorp', 'Scratch', 'Shark_Shooter_Terrafin', 'Short_Cut', 'Shroomboom', 'Slam_Bam', 'Slobber_Tooth', 'Smash_Hit', 'Smolderdash', 'Snap_Shot', 'Sonic_Boom', 'Spitfire', 'Splat', 'Spotlight', 'Sprocket', 'Spy_Rise', 'Spyro', 'Star_Strike', 'Starcast', 'Stealth_Elf', 'Stink_Bomb', 'Stormblade', 'Stump_Smash', 'Sunburn', 'Super_Shot_Stealth_Elf', 'Swarm', 'Tae_Kwon_Crow', 'Terrafin', 'Thrillipede', 'Thumpback', 'Thunderbolt', 'Tidepool', 'Torch', 'Trail_Blazer', 'Trap_Shadow', 'Tread_Head', 'Tree_Rex', 'Tri-Tip', 'Trigger_Happy', 'Tuff_Luck', 'Turbo_Charge_Donkey_Kong', 'Voodood', 'Wallop', 'Warnado', 'Wash_Buckler', 'Wham-Shell', 'Whirlwind', 'Wild_Storm', 'Wildfire', 'Wind-Up', 'Wolfgang', 'Wrecking_Ball', 'Zap', 'Zoo_Lou', 'Zook'
+            ];
+            const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
+            window.location.href = skylanderWikiBaseUrl + randomCharacter;
+        }
+
+        // Redirect when the page loads
+        window.onload = redirectToRandomCharacter;
+    </script>
+</head>
+<body>
+    <h1>Redirecting to a random Skylander character...</h1>
+</body>
+</html>
